@@ -1,0 +1,24 @@
+@use "../../styles/partials/mixins" as mixins;
+
+.navigation {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f6f9ff;
+
+    &__wrapper {
+        @include mixins.wrapper;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+
+    &__item {
+        font-size: 3rem;
+        display: block;
+        cursor: pointer;
+    }
+}
