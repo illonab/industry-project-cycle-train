@@ -1,5 +1,6 @@
 import "./Results.scss";
 import React, { useState } from "react";
+import map from "../../assets/images/map.png";
 
 // import Intermediate from "../../components/Intermediate/Intermediate";
 // import Confident from "../../components/Confident/Confident";
@@ -18,30 +19,26 @@ export default function Results(props) {
             onClick={(event) => setskillLevel("beginner")}
             className="results__button results__button--active results__button--beginner"
           >
-            Beginner
+            Quiet
           </button>
 
           <button
             onClick={(event) => setskillLevel("intermediate")}
             className="results__button results__button--intermediate"
           >
-            Intermediate
+            Steady
           </button>
 
           <button
             onClick={(event) => setskillLevel("confident")}
             className="results__button results__button--confident"
           >
-            Confident
+            Fast
           </button>
         </div>
         <div className="results__container">
           <div className="results__map-image-container">
-            <img
-              src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/07/02/16/subway.jpg"
-              alt="map route"
-              className="results__map-image"
-            />
+            <img src={map} alt="map route" className="results__map-image" />
           </div>
           <div className="results__route-info">
             <div className="results__meet-info-container">
@@ -92,7 +89,9 @@ export default function Results(props) {
                 </div>
               </div>
 
-              <button className="results__join-button">Join</button>
+              <Link to="/success">
+                <button className="results__join-button">Join</button>
+              </Link>
             </div>
           </div>
         </div>
