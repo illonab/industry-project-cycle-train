@@ -37,6 +37,10 @@
     border-bottom: 3px solid transparent;
     @include mixins.text;
     border-bottom: 1px solid lightgray;
+
+    &:hover {
+      color: #008B8B;
+    }
   }
 
   &__burger {
