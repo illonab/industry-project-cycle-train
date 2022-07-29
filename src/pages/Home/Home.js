@@ -1,5 +1,7 @@
 import "./Home.scss";
 import avatar from "../../assets/images/avatar.jpg";
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <main className="main">
@@ -52,7 +54,9 @@ function Home() {
           max="21:00"
         />
       </label>
-      <input type="submit" value="Go" className="main__btn cta-btn" />
+      <Link to={"/results"}>
+        <input type="submit" value="Go" className="main__btn cta-btn" />
+      </Link>
     </main>
   );
 }
