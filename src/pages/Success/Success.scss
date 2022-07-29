@@ -1,0 +1,15 @@
+.success {
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__tick-icon {
+    width: 30rem;
+  }
+}
