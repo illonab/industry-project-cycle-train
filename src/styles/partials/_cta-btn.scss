@@ -3,17 +3,15 @@
 .cta-btn {
     background-color: #008B8B;
     color: #FFF;
-    height: 4rem;
-    border-radius: 30px;
+    height: 4.3rem;
+    border-radius: 26px;
     border: 0;
-    text-transform: uppercase;
     cursor: pointer;
     width: 20rem;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     line-height: 2rem;
-    text-transform: uppercase;
     transition: background-color 250ms linear;
-    font-weight: bold;
+
 
     &:hover {
         background-color: #0a6d6d;

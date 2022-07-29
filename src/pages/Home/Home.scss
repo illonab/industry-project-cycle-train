@@ -69,35 +69,63 @@
 
     &__control {
         @include mixins.text-label;
-        margin-top: 1.6rem;
+        margin-top: 2.4rem;
+        flex: 1;
+        display: flex;
+    }
+
+    &__icon {
+        margin-left: 1.6rem;
     }
 
     &__select {
         margin-left: 1.6rem;
-        margin-right: 1.6rem;
-        display: block;
+
+        border-radius: 5px;
+        background-color: #D9D9D9;
+        flex: 1;
+        height: 34px;
+        border: 1px solid transparent;
+        text-align: center;
     }
 
     &__date {
         margin-left: 1.6rem;
+        border-radius: 5px;
+        background-color: #D9D9D9;
+        height: 34px;
+        border: 1px solid transparent;
+        font-family: inherit;
+        text-align: center;
+        flex: 1;
     }
 
     &__time {
         margin-left: 1.6rem;
+        border-radius: 5px;
+        background-color: #D9D9D9;
+        height: 34px;
+        border: 1px solid transparent;
+        font-family: inherit;
+        text-align: center;
+        flex: 1;
     }
 
     &__btn {
-        margin-top: 1.6rem;
+        margin-top: 3.2rem;
     }
 
-    &__schedule {
-        margin-top: 1.6rem;
-        display: flex;
-        flex-direction: column;
-    }
 
     &__container-from {
-
         display: flex;
+        flex: 1;
+    }
+
+    &__plan-trip {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2.6rem;
+
     }
 }
