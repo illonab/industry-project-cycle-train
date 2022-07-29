@@ -4,11 +4,11 @@
     background-color: #0095FF;
     color: #FFF;
     height: 4rem;
-    border-radius: 4px;
+    border-radius: 30px;
     border: 0;
     text-transform: uppercase;
     cursor: pointer;
-    width: 100%;
+    width: 20rem;
     font-size: 1.2rem;
     line-height: 2rem;
     text-transform: uppercase;
@@ -18,9 +18,9 @@
         background-color: #0065AD;
     }
 
-    @include mixins.tablet {
-        min-width: 15rem;
-        padding: 0 3.2rem;
-        width: auto;
-    }
+    // @include mixins.tablet {
+    //     min-width: 15rem;
+    //     padding: 0 3.2rem;
+    //     width: auto;
+    // }
 }

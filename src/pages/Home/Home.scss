@@ -1,0 +1,73 @@
+@use "../../styles/partials/mixins" as mixins;
+
+.main {
+    @include mixins.wrapper;
+    @include mixins.section-spacing;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        margin-bottom: 1.6rem;
+    }
+
+    &__img {
+        width: 20rem;
+        height: 20rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    &__trip {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 2.4rem;
+    }
+
+    &__solo {
+        flex: 1;
+        margin-right: 1.6rem;
+    }
+
+    &__cycle {
+        flex: 1;
+
+        &--active {
+            border: 2px solid black;
+        }
+    }
+
+    &__control {
+        @include mixins.text-label;
+        margin-top: 1.6rem;
+    }
+
+    &__select {
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+    }
+
+    &__date {
+        margin-left: 1.6rem;
+    }
+
+    &__time {
+        margin-left: 1.6rem;
+    }
+
+    &__btn {
+        margin-top: 1.6rem;
+    }
+}
+
+.btn-trip {
+    background-color: aliceblue;
+    @include mixins.text;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+
+}
