@@ -1,6 +1,6 @@
 import React from "react";
 import "./Success.scss";
-import tickGif from "../../assets/successfully-done.gif";
+import tickGif from "../../assets/tick.gif";
 
 export default function Success() {
   return (
