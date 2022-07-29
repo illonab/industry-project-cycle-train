@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
-    <header className="navigation">
+    <div className="navigation">
       <div className="navigation__wrapper">
         <div className="navigation__items">
           <Link to={"/"}>
@@ -13,7 +13,7 @@ function Navigation() {
           <i className="navigation__item bi bi-compass"></i>
         </div>
       </div>
-    </header>
+    </div>
   );
 }
 
