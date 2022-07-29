@@ -6,7 +6,7 @@
   width: 100%;
   height: 7rem;
   border-top: 2px solid black;
-  background-color: #fff;
+  background-color: #e4e4e4;
 
   &__wrapper {
     @include mixins.wrapper;
@@ -22,5 +22,11 @@
     font-size: 3rem;
     display: block;
     cursor: pointer;
+  }
+
+  &__link-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
