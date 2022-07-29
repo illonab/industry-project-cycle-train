@@ -3,6 +3,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: auto;
+  }
+
+  &__icon-container {
+    margin: 0 auto;
   }
 
   &__text {

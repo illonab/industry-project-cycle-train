@@ -6,7 +6,7 @@
 
   &__header {
     text-align: center;
-    margin-bottom: 1.6rem;
+    margin-bottom: 0.8rem;
   }
 
   &__button-group {
@@ -28,7 +28,7 @@
 
     &--beginner {
       color: white;
-      background-color: darkcyan;
+      background-color: #008b8b;
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px;
     }
@@ -47,10 +47,14 @@
     }
   }
 
+  &__map-image-container {
+    width: 100%;
+    border-radius: 16px;
+  }
+
   &__map-image {
-    width: 100vw;
+    width: 100%;
     padding: 1.6rem;
-    border-radius: 18px;
   }
 
   &__route-info {
@@ -84,7 +88,7 @@
   }
 
   &__avatars-container {
-    margin-bottom: 1.6rem;
+    margin-bottom: 0.8rem;
     display: flex;
     flex-direction: row;
   }
@@ -104,5 +108,9 @@
     border-radius: 8px;
     border: none;
     padding: 1rem;
+  }
+
+  &__wrapper {
+    @include mixins.wrapper;
   }
 }
