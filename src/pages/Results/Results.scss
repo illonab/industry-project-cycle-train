@@ -2,10 +2,11 @@
 
 .results {
   font-size: 1.6rem;
+  padding-bottom: 7.5rem;
 
   &__header {
     text-align: center;
-    margin-bottom: 1.6rem;
+    margin-bottom: 0.8rem;
   }
 
   &__button-group {
@@ -13,6 +14,7 @@
     display: flex;
     padding: 0 1.6rem;
   }
+
   &__button {
     border-radius: 16px;
     padding: 1rem;
@@ -30,11 +32,13 @@
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px;
     }
+
     &--intermediate {
       color: white;
       background-color: darkcyan;
       border-radius: 0px;
     }
+
     &--confident {
       color: white;
       background-color: darkcyan;
@@ -43,10 +47,14 @@
     }
   }
 
+  &__map-image-container {
+    width: 100%;
+    border-radius: 16px;
+  }
+
   &__map-image {
-    width: 100vw;
+    width: 100%;
     padding: 1.6rem;
-    border-radius: 18px;
   }
 
   &__route-info {
@@ -71,14 +79,16 @@
 
   &__participants-container {
     margin-top: 1.6rem;
+    padding-bottom: 1.6rem;
   }
 
   &__participants-text-container {
     display: flex;
     justify-content: space-between;
   }
+
   &__avatars-container {
-    margin-bottom: 1.6rem;
+    margin-bottom: 0.8rem;
     display: flex;
     flex-direction: row;
   }
@@ -98,5 +108,9 @@
     border-radius: 8px;
     border: none;
     padding: 1rem;
+  }
+
+  &__wrapper {
+    @include mixins.wrapper;
   }
 }

@@ -2,9 +2,11 @@
 
 .navigation {
   position: fixed;
-  top: 92vh;
+  bottom: 0;
   width: 100%;
-  background-color: #f6f9ff;
+  height: 7rem;
+  border-top: 2px solid black;
+  background-color: #fff;
 
   &__wrapper {
     @include mixins.wrapper;
@@ -13,7 +15,7 @@
   &__items {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
 
   &__item {
