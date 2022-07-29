@@ -13,14 +13,9 @@
     line-height: 2rem;
     text-transform: uppercase;
     transition: background-color 250ms linear;
+    font-weight: bold;
 
     &:hover {
-        background-color: #085a5a;
+        background-color: #0a6d6d;
     }
-
-    // @include mixins.tablet {
-    //     min-width: 15rem;
-    //     padding: 0 3.2rem;
-    //     width: auto;
-    // }
 }
