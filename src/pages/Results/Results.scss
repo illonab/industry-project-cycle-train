@@ -12,53 +12,58 @@
   &__button-group {
     width: 100%;
     display: flex;
-    padding: 0 1.6rem;
+    // padding: 0 1.6rem;
+    border-radius: 26px;
+    background-color: #e4e4e4;
+    border: 1px solid #000000;
   }
 
   &__button {
-    border-radius: 16px;
+    border-radius: 26px;
     padding: 1rem;
     border: none;
     flex-grow: 1;
     border: solid white 1px;
 
     &:active {
-      background-color: pink;
+      background-color: darkcyan;
     }
 
     &--beginner {
       color: white;
       background-color: #008b8b;
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px;
+      border-radius: 26px;
+      border: 1px solid #000000;
+      // border-bottom-right-radius: 0px;
     }
 
     &--intermediate {
-      color: white;
-      background-color: darkcyan;
-      border-radius: 0px;
+      color: black;
+      background-color: #e4e4e4;
+      border-radius: 26px;
+      border: none;
     }
 
     &--confident {
-      color: white;
-      background-color: darkcyan;
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 0px;
+      color: black;
+      background-color: #e4e4e4;
+      border-radius: 26px;
+      border: none;
     }
   }
 
   &__map-image-container {
     width: 100%;
-    border-radius: 16px;
+    // border-radius: 16px;
   }
 
   &__map-image {
     width: 100%;
-    padding: 1.6rem;
+    padding: 1.6rem 0;
   }
 
   &__route-info {
-    padding: 0 2.4rem;
+    padding: 0 0.8rem;
   }
 
   &__meet-point &__meet-time {
@@ -79,7 +84,7 @@
 
   &__participants-container {
     margin-top: 1.6rem;
-    padding-bottom: 1.6rem;
+    padding-bottom: 0.8rem;
   }
 
   &__participants-text-container {
@@ -88,7 +93,7 @@
   }
 
   &__avatars-container {
-    margin-bottom: 0.8rem;
+    // margin-bottom: 0.8rem;
     display: flex;
     flex-direction: row;
   }
@@ -97,17 +102,29 @@
     height: 5rem;
   }
 
-  &__info-text {
-    color: red;
+  &__join-text {
+    font-weight: bold;
+    text-align: center;
+    margin: 0.8rem 0;
+    font-size: smaller;
   }
 
   &__join-button {
-    width: 100%;
+    width: 20rem;
+
     color: white;
     background-color: darkcyan;
-    border-radius: 8px;
+    border-radius: 26px;
     border: none;
     padding: 1rem;
+    // text-align: center;
+    // margin: 0 auto;
+    vertical-align: center;
+  }
+
+  &__join-button-container {
+    display: flex;
+    justify-content: center;
   }
 
   &__wrapper {

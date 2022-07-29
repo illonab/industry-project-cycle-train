@@ -56,7 +56,6 @@ export default function Results(props) {
             <div className="results__participants-container">
               <div className="results__participants-text-container">
                 <p className="results__label">Who's joined:</p>
-                <p className="results__info-text">3 spots remaining</p>
               </div>
               <div className="results__avatars-container">
                 <div className="results__avatar-wrapper">
@@ -88,13 +87,15 @@ export default function Results(props) {
                   />
                 </div>
               </div>
-
-              <Link to="/success">
-                <button className="results__join-button">Join</button>
-              </Link>
             </div>
           </div>
         </div>
+      </div>
+      <div className="results__join-button-container">
+        <Link to="/success">
+          <button className="results__join-button">Join</button>
+          <p className="results__join-text">3 spots remaining</p>
+        </Link>
       </div>
     </div>
   );

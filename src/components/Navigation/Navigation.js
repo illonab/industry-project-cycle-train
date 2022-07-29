@@ -7,10 +7,19 @@ function Navigation() {
       <div className="navigation__wrapper">
         <div className="navigation__items">
           <Link to={"/"}>
-            <i className="navigation__item bi bi-house"></i>
+            <div className="navigation__link-wrapper">
+              <i className="navigation__item bi bi-house"></i>
+              <p className="navigation__item-label">Home</p>
+            </div>
           </Link>
-          <i className="navigation__item bi-bicycle"></i>
-          <i className="navigation__item bi bi-compass"></i>
+          <div className="navigation__link-wrapper">
+            <i className="navigation__item bi-bicycle"></i>
+            <p className="navigation__item-label">My Profile</p>
+          </div>
+          <div className="navigation__link-wrapper">
+            <i className="navigation__item bi bi-compass"></i>
+            <p className="navigation__item-label">Explore</p>
+          </div>
         </div>
       </div>
     </div>
