@@ -4,7 +4,7 @@
     background-color: rgba(0, 139, 139, 0.5);
     @include mixins.text;
     font-weight: bold;
-    padding: 10px 38px;
+    padding: 10px 10px;
     border-radius: 15px;
     text-align: center;
     cursor: pointer;
@@ -54,11 +54,13 @@
 
     &__solo {
         flex: 1;
+        white-space: nowrap;
     }
 
     &__cycle {
         flex: 1;
         margin-right: 1rem;
+        white-space: nowrap;
 
         &--active {
             background-color: #008B8B;
