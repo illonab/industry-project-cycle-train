@@ -15,7 +15,7 @@
 
 .main {
 
-    @include mixins.section-spacing;
+    padding-bottom: 10rem;
 
     &__wrapper {
         @include mixins.wrapper;
@@ -126,6 +126,29 @@
         flex-direction: column;
         width: 100%;
         margin-top: 2.6rem;
+
+    }
+
+    &__tip {
+        border: 1px solid #008B8B;
+        border-radius: 15px;
+        padding: 1rem 2rem;
+        width: 100%;
+        margin-top: 3.7rem;
+        text-align: center;
+    }
+
+    &__tip-icon {
+        font-size: 2rem;
+    }
+
+    &__tip-title {
+        @include mixins.text;
+        font-weight: 700;
+    }
+
+    &__tip-text {
+        @include mixins.text;
 
     }
 }

@@ -7,7 +7,7 @@ function Navigation() {
       <div className="navigation__wrapper">
         <div className="navigation__items">
           <Link to={"/"}>
-            <div className="navigation__link-wrapper">
+            <div className="navigation__link-wrapper navigation__link-wrapper--active">
               <i className="navigation__item bi bi-house"></i>
               <p className="navigation__item-label">Home</p>
             </div>

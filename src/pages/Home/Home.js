@@ -65,6 +65,13 @@ function Home() {
         <Link to={"/results"}>
           <input type="submit" value="Go" className="main__btn cta-btn" />
         </Link>
+        <div className="main__tip">
+          <i className="bi bi-info-circle main__tip-icon"></i>
+          <p className="main__tip-title">Tip of the day!</p>
+          <p className="main__tip-text">
+            Remember to check your tire pressure before you set off!
+          </p>
+        </div>
       </div>
     </main>
   );
