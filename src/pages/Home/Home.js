@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <main className="main">
-      <h1 className="main__title">Hi Siphie! Welcome Back</h1>
+      <h1 className="main__title">Hi Sophie! Welcome Back</h1>
       <img src={avatar} alt="" className="main__img" />
       <div className="main__trip">
         <div className="main__solo btn-trip">Solo Trip</div>
