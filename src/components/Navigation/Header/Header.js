@@ -20,6 +20,9 @@ function Header() {
           <a href="#" class="header__item">
             Settings
           </a>
+          <a href="#" class="header__item">
+            Log out
+          </a>
         </div>
       </nav>
     </header>

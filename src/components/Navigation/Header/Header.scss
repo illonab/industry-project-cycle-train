@@ -12,7 +12,7 @@
   &__checkbox {
     display: none;
 
-    &:checked ~ .header__items {
+    &:checked~.header__items {
       left: 0;
     }
   }
@@ -24,15 +24,19 @@
     position: absolute;
     left: -100%;
     transition: all 0.5s ease-in;
-    background-color: #fff;
     display: flex;
     flex-direction: column;
+    padding: 2.2rem 0;
+    background-color: #fff;
+
   }
 
   &__item {
     font-size: 1.5rem;
-    padding: 1rem 0;
+    padding: 2rem 0;
     border-bottom: 3px solid transparent;
+    @include mixins.text;
+    border-bottom: 1px solid lightgray;
   }
 
   &__burger {
