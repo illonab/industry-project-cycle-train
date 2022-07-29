@@ -4,8 +4,8 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #f6f9ff;
   height: 7.5rem;
+  border-top: 2px solid black;
 
   &__wrapper {
     @include mixins.wrapper;

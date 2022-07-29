@@ -1,7 +1,7 @@
 @use "../../styles/partials/mixins" as mixins;
 
 .cta-btn {
-    background-color: #0095FF;
+    background-color: #008B8B;
     color: #FFF;
     height: 4rem;
     border-radius: 30px;
@@ -15,7 +15,7 @@
     transition: background-color 250ms linear;
 
     &:hover {
-        background-color: #0065AD;
+        background-color: #085a5a;
     }
 
     // @include mixins.tablet {
