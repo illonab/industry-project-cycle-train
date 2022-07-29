@@ -88,13 +88,14 @@ export default function Results(props) {
                   />
                 </div>
               </div>
-
-              <Link to="/success">
-                <button className="results__join-button">Join</button>
-              </Link>
             </div>
           </div>
         </div>
+      </div>
+      <div className="results__join-button-container">
+        <Link to="/success">
+          <button className="results__join-button">Join</button>
+        </Link>
       </div>
     </div>
   );

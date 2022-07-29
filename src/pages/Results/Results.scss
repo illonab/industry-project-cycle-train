@@ -16,7 +16,7 @@
   }
 
   &__button {
-    border-radius: 16px;
+    border-radius: 26px;
     padding: 1rem;
     border: none;
     flex-grow: 1;
@@ -79,7 +79,7 @@
 
   &__participants-container {
     margin-top: 1.6rem;
-    padding-bottom: 1.6rem;
+    padding-bottom: 0.8rem;
   }
 
   &__participants-text-container {
@@ -102,12 +102,21 @@
   }
 
   &__join-button {
-    width: 100%;
+    width: 20rem;
+
     color: white;
     background-color: darkcyan;
-    border-radius: 8px;
+    border-radius: 26px;
     border: none;
     padding: 1rem;
+    // text-align: center;
+    // margin: 0 auto;
+    vertical-align: center;
+  }
+
+  &__join-button-container {
+    display: flex;
+    justify-content: center;
   }
 
   &__wrapper {
