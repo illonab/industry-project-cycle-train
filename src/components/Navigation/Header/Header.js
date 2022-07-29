@@ -9,10 +9,16 @@ function Header() {
         <input type="checkbox" id="toggle" class="header__checkbox" />
         <div class="header__items">
           <a href="#" class="header__item">
-            My Account
+            Menu
+          </a>
+          <a href="#" class="header__item">
+            Account
           </a>
           <a href="#" class="header__item">
             Help
+          </a>
+          <a href="#" class="header__item">
+            Settings
           </a>
         </div>
       </nav>
