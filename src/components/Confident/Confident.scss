@@ -1,0 +1,102 @@
+@use "../../styles/partials/mixins" as mixins;
+
+.results {
+  font-size: 1.6rem;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 1.6rem;
+  }
+
+  &__button-group {
+    width: 100%;
+    display: flex;
+    padding: 0 1.6rem;
+  }
+  &__button {
+    border-radius: 16px;
+    padding: 1rem;
+    border: none;
+    flex-grow: 1;
+    border: solid white 1px;
+
+    &:active {
+      background-color: pink;
+    }
+
+    &--beginner {
+      color: white;
+      background-color: darkcyan;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    &--intermediate {
+      color: white;
+      background-color: darkcyan;
+      border-radius: 0px;
+    }
+    &--confident {
+      color: white;
+      background-color: darkcyan;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+  }
+
+  &__map-image {
+    width: 100vw;
+    padding: 1.6rem;
+    border-radius: 18px;
+  }
+
+  &__route-info {
+    padding: 0 2.4rem;
+  }
+
+  &__meet-point &__meet-time {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__meet-info-container {
+    display: flex;
+    gap: 2.4rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__label {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__participants-container {
+    margin-top: 1.6rem;
+  }
+
+  &__participants-text-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__avatars-container {
+    margin-bottom: 1.6rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__avatar {
+    height: 5rem;
+  }
+
+  &__info-text {
+    color: red;
+  }
+
+  &__join-button {
+    width: 100%;
+    color: white;
+    background-color: darkcyan;
+    border-radius: 8px;
+    border: none;
+    padding: 1rem;
+  }
+}

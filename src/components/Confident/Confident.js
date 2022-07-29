@@ -1,22 +1,9 @@
-import "./Results.scss";
-
 import React from "react";
+import "./Confident.scss";
 
-export default function Results() {
+export default function Confident() {
   return (
-    <div className="results">
-      <h1 className="results__header">Cycle Trains</h1>
-      <div className="results__button-group">
-        <button className="results__button results__button--beginner">
-          Beginner
-        </button>
-        <button className="results__button results__button--intermediate">
-          Intermediate
-        </button>
-        <button className="results__button results__button--confident">
-          Confident
-        </button>
-      </div>
+    <div className="results__container">
       <div className="results__map-image-container">
         <img
           src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2014/07/02/16/subway.jpg"
@@ -27,7 +14,7 @@ export default function Results() {
       <div className="results__route-info">
         <div className="results__meet-info-container">
           <div className="results__meet-point">
-            <p className="results__label">Meet up point</p>
+            <p className="results__label">CONFIDENT</p>
             <p className="results__text">Liverpool Station</p>
           </div>
           <div className="results__meet-time">
