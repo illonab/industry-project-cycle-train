@@ -1,5 +1,5 @@
 import "./Home.scss";
-import avatar from "../../assets/images/avatar.jpg";
+import mainpage from "../../assets/images/cycle-animation.gif";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -7,15 +7,20 @@ function Home() {
     <main className="main">
       <div className="main__wrapper">
         <h1 className="main__title">Hi Sophie! Welcome Back</h1>
-        <img src={avatar} alt="" className="main__img" />
+        <img src={mainpage} alt="" className="main__img" />
         <div className="main__trip">
-          <div className="main__solo btn-trip">Solo Trip</div>
-          <div className="main__cycle btn-trip main__cycle--active">
-            Cycle Train
+          <h2 className="main__subheading">Plan your trip</h2>
+          <div className="main__plan">
+            <div className="main__cycle btn-trip main__cycle--active">
+              Cycle Train
+            </div>
+            <div className="main__solo btn-trip">Solo Trip</div>
           </div>
         </div>
-        <div className="main__from">
-          <label className="main__control">
+
+        <div className="main__schedule">
+          <h2 className="main__subheading">Details</h2>
+          <label className="main__control main__container-from">
             From
             <select name="stations" className="main__select">
               <option value="Home">Home</option>
