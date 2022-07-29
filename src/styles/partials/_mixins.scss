@@ -36,16 +36,11 @@
 }
 
 @mixin pageHeader {
-    font-size: 2.4rem;
-    line-height: 3.2rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
     font-weight: 600;
     margin-bottom: 1.6rem;
 
-    @include tablet {
-        margin-bottom: 2.4rem;
-        font-size: 3.3rem;
-        line-height: 4.4rem;
-    }
 }
 
 @mixin sectionHeader {
@@ -56,8 +51,8 @@
 }
 
 @mixin subheader {
-    font-size: 1.3rem;
-    line-height: 1.8rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
     font-weight: 600;
 
     @include tablet {
@@ -67,22 +62,15 @@
 }
 
 @mixin text {
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-
-    @include tablet {
-        font-size: 1.4rem;
-        line-height: 2.2rem;
-    }
+    font-size: 1.6rem;
+    line-height: 2rem;
 }
 
 @mixin text-label {
-    font-size: 1.2rem;
-    line-height: 2rem;
-    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 2.4rem;
     font-family: inherit;
-    color: #AFAFAF;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 @mixin btn-icon($url) {
