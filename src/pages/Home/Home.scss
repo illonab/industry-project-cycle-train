@@ -1,11 +1,15 @@
 @use "../../styles/partials/mixins" as mixins;
 
 .main {
-    @include mixins.wrapper;
+
     @include mixins.section-spacing;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    &__wrapper {
+        @include mixins.wrapper;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &__title {
         margin-bottom: 1.6rem;
@@ -58,6 +62,12 @@
 
     &__btn {
         margin-top: 1.6rem;
+    }
+
+    &__from {
+        margin-top: 1.6rem;
+        display: flex;
+        flex-direction: row;
     }
 }
 
